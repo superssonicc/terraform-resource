@@ -16,6 +16,7 @@ output "arns" {
   value = aws_iam_user.lb[*].arn
 }
 
+output "kuldeep" {}
 
 output "zipmap" {
   value = zipmap(aws_iam_user.lb[*].name, aws_iam_user.lb[*].arn)
